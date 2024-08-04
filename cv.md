@@ -20,11 +20,15 @@
 * GIT
 * Visual Studio, Visual Studio Code
 * Figma, Pixso, Adobe Illustrator
+* English (B1)  
 
 ## Experience    
 
 Подрабатывала FullStack-разработчиком в университете.
 (добавить ссылки)
 
-Образование (включая пройденные курсы и тренинги)
-Английский язык (уровень английского языка, если была языковая практика, расскажите о ней)
+## Education  
+
+* *2019 - 2024*- Бакалавриат Информатика и вычислительная техника «НИУ «МЭИ»
+* *2024 - ...* - Магистратура Информатика и вычислительная техника «НИУ «МЭИ»
+* *2024* - Курс по верстке HTML, CSS от freeCodeCamp [сертификат](https://www.freecodecamp.org/certification/rrrrr_neko/responsive-web-design)   
