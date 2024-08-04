@@ -1,8 +1,8 @@
-#Svetlana Konyaeva
-*telegram: @rrrrr_neko*
-*email: skonyaeva@list.ru*
+# Svetlana Konyaeva
+*telegram: @rrrrr_neko*  
+*email: skonyaeva@list.ru*  
 
-## About Me
+## About Me  
 
 23 года, люблю читать книги и комиксы, а также кататься на лонгборде
 ---
