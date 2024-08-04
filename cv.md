@@ -1,6 +1,5 @@
-# Svetlana Konyaeva
-*telegram: @rrrrr_neko* 
-
+#Svetlana Konyaeva
+*telegram: @rrrrr_neko*
 *email: skonyaeva@list.ru*
 
 ## About Me
