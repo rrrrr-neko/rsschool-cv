@@ -28,9 +28,20 @@
 * Windows OS, Linux(Ubuntu)  
 * English (B1)
 
+## Code Examlles  
+```
+function vowelOne(s){
+    let vowels = ['a','e','i','o','u'];
+    return s.toLowerCase()
+            .split('')
+            .map( (a) => (vowels.find(item => item == a)) ? a = 1 : a = 0 )
+            .join('');
+  }
+```
+
 ## Education  
-* *september 2019 - june 2024* - bachelor "09.03.01 Informatics and Computer Engineering" MPEI   
-* *september 2024 - ...* - master's degree "09.04.01 Computer Science and Engineering" MPEI
+* *2019 - 2024* - bachelor "09.03.01 Informatics and Computer Engineering" MPEI   
+* *2024 - ...* - master's degree "09.04.01 Computer Science and Engineering" MPEI
 
 **Courses:**  
 * Responsive Web Desing [Certifacation](https://www.freecodecamp.org/certification/rrrrr_neko/responsive-web-design)  
@@ -40,8 +51,3 @@
 Подрабатывала FullStack-разработчиком в университете.
 (добавить ссылки)
 
-## Education  
-
-* *2019 - 2024*- Бакалавриат Информатика и вычислительная техника «НИУ «МЭИ»
-* *2024 - ...* - Магистратура Информатика и вычислительная техника «НИУ «МЭИ»
-* *2024* - Курс по верстке HTML, CSS от freeCodeCamp [сертификат](https://www.freecodecamp.org/certification/rrrrr_neko/responsive-web-design)   
