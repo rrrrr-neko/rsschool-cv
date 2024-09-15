@@ -28,7 +28,7 @@
 * Windows OS, Linux(Ubuntu)  
 * English (B1)
 
-## Code Examlles  
+## Code Examples  
 ```
 function vowelOne(s){
     let vowels = ['a','e','i','o','u'];
