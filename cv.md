@@ -1,12 +1,13 @@
-# Svetlana Konyaeva
-*telegram: [@rrrrr_neko](https://t.me/rrrrr_neko)*  
-*phone: +7 (905) 111-74-02*
-*email: skonyaeva@list.ru*   
+# Svetlana Konyaeva  
 
+*telegram: [@rrrrr_neko](https://t.me/rrrrr_neko)*    
+*phone: +7 (905) 111-74-02*   
+*email: skonyaeva@list.ru*   
 
 
 ## About Me    
 
+23 years old, coming soon...
 23 года, люблю читать книги и комиксы, а также кататься на лонгборде
 
 Хочу развиваться как фронтенд-разработчик и UX/UI дизайнер
@@ -17,14 +18,23 @@
 
 ## Skills  
 
-* HTML, CSS
+* HTML
+* CSS (BEM) 
 * JavaScript
 * PHP (Laravel)
-* GIT
+* GIT / GitHub  
 * Visual Studio, Visual Studio Code
 * Figma, Pixso, Adobe Illustrator
-* English (B1)  
+* Windows OS, Linux(Ubuntu)  
+* English (B1)
 
+## Education  
+* *september 2019 - june 2024* - bachelor "09.03.01 Informatics and Computer Engineering" MPEI   
+* *september 2024 - ...* - master's degree "09.04.01 Computer Science and Engineering" MPEI
+
+**Courses:**  
+* Responsive Web Desing [Certifacation](https://www.freecodecamp.org/certification/rrrrr_neko/responsive-web-design)  
+  
 ## Experience    
 
 Подрабатывала FullStack-разработчиком в университете.
