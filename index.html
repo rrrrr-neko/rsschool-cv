@@ -3,67 +3,201 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV2 HTML and CSS</title>
+    <title>CV3 HTML and CSS</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main>
+    <input type="radio" name="lang" id="lang-ru" class="lang-radio">
+    <input type="radio" name="lang" id="lang-en" class="lang-radio"  checked>
+    <header>
         <hr class="green">
-        <section class="main">
-            <div>
-                <h1>Коняева Светлана</h1>
-                <p class="subtitle">Frontend-разработчик</p>
-                <p class="contact">Москва</p>
-                <p class="contact">+7 (905) 111-74-02</p>
-                <p class="contact">https://t.me/rrrrr_neko</p>
-                <p class="contact">skonyaeva@list.ru</p>
-                <p class="contact">https://github.com/rrrrr-neko</p>
-            </div>
-            <img src="photo.jpg" class="avatar" alt="my photo">
-        </section>
-        <section class="education">
-            <h2>Образование</h2>
-            <p><b>НИУ «МЭИ», Москва </b>– бакалавр <i>(сентябрь 2019 - июль 2024)</i>
-                Институт информационных и вычислительных технологий,
-                направление «Информатика и вычислительная техника»</p>
-            <p><b>НИУ «МЭИ», Москва </b>– магистратура <i>(сентябрь 2024 - ...)</i>
+        <div class="lang-switch">
+            <label for="lang-ru">Русский</label>
+            <label for="lang-en">English</label>
+        </div>
+    </header>
+    <main class="content-wrapper">
+        <div class="content content-ru">
+            <section class="main-info">
+                <div>
+                    <h1>Коняева Светлана</h1>
+                    <p class="subtitle">Frontend-разработчик</p>
+                    <ul class="contact__list">
+                        <li class="contact__item">Москва</li>
+                        <li class="contact__item"><a href="tel:+79051117402">Phone: +7 (905) 111-74-02</a></li>
+                        <li class="contact__item"><a href="https://t.me/rrrrr_neko">Telegram: @rrrrr_neko</a></li>
+                        <li class="contact__item"><a href="mailto:skonyaeva@list.ru">Email: skonyaeva@list.ru</a></li>
+                        <li class="contact__item"><a href="https://github.com/rrrrr-neko">Github: rrrrr-neko</a></li>
+                    </ul>
+                    <nav class="navbar">
+                        <ul class="navbar__list">
+                            <li class="navbar__item"><a href="#education-ru">Образование</a></li>
+                            <li class="navbar__item"><a href="#skills-ru">Навыки</a></li>
+                            <li class="navbar__item"><a href="#experience-ru">Опыт</a></li>
+                            <li class="navbar__item"><a href="#example-ru">Пример кода</a></li>
+                            <li class="navbar__item"><a href="#about-ru">О себе</a></li>
+                        </ul>
+    
+                    </nav>
+                </div>
+                <img src="photo.jpg" class="avatar" alt="photo Konyaeva Svetlana, beautiful girl with blue eyes and hair">
+            </section>
+            <section class="education" id="education-ru">
+                <h2>Образование</h2>
+                <p><b>НИУ «МЭИ», Москва </b>– бакалавр <i>(сентябрь 2019 - июль 2024)</i>
                     Институт информационных и вычислительных технологий,
                     направление «Информатика и вычислительная техника»</p>
-        </section>
-        <section class="skills">
-            <h2>Навыки</h2>
-            <ul>
-                <li>ЯП (базовый уровень): HTML, CSS, JavaScript;</li>
-                <li>Git (базовый уровень);</li>
-                <li>Создание и работа с интерфейсами в Figma, Pixso;</li>
-                <li>Владение Adobe Illustrator;</li>
-                <li>Английский язык (B1);</li>
-            </ul>
-        </section>
-        <section class="experience">
-            <h2>Опыт</h2>
-            <p> <b>Разработка</b> <i>(обучение)</i></p>
-            <ul>
-                <li>Сделала фронтенд ля CRM-системы приемной комиссии НИУ «МЭИ» (HTML, CSS, JS),
-                    помогала в разработке бекенда CRM-системы (Laravel, PHP, SQL).</li>
-                <li>Разработала внешний вид формы регистрации на День Открытых дверей (HTML,
-                    CSS, JS). <a href="https://github.com/rrrrr-neko/form-pk.git" class="link">https://github.com/rrrrr-neko/form-pk.git</a></li>
-                <li>Выполнила дипломную работу бакалавра на тему «Разработка и внедрение версии
-                    для слабовидящих на сайт олимпиады школьников» (HTML, CSS, JS, JQuery).</li>
-                <li>Выполнила курсовую работу по курсу WEB-технологии «Интернет-Магазин» (HTML,
-                    CSS, JS, PHP, SQL). <a href="https://github.com/rrrrr-neko/kr_web2_online_store.git" class="link">https://github.com/rrrrr-neko/kr_web2_online_store.git</a> </li>
-                <li>Форма регистрации на танцевальный лагерь (HTML, CSS). <a href=" https://github.com/rrrrr-neko/form_dance_camp.git" class="link"> https://github.com/rrrrr-neko/form_dance_camp.git</a>
-                   </li>
-            </ul>
-        </section>
-        <section class="about">
-            <h2>О себе</h2>
-            <p>Люблю пробовать новое и саморазвиваться. В свободное время прохожу курс по
-                изучению HTML, CSS и JS от freeCodeCamp, катаюсь на лонгборде или читаю книги.</p>
-            <p>В университете состояла в студенческих организациях - организовывала крупные
-                мероприятия, проводила лекции, участвовала и выступала на форумах. Этот опыт помог
-                развить мне тайм-менеджмент, коммуникабельность и умение оперативно изучить новое в
-                сжатые сроки.</p>
-        </section>
+                <p><b>НИУ «МЭИ», Москва </b>– магистратура <i>(сентябрь 2024 - ...)</i>
+                        Институт информационных и вычислительных технологий,
+                        направление «Информатика и вычислительная техника»</p>
+            </section>
+            <section class="skills" id="skills-ru">
+                <h2>Навыки</h2>
+                <ul>
+                    <li>ЯП (базовый уровень): HTML, CSS, JavaScript;</li>
+                    <li>Git (базовый уровень);</li>
+                    <li>Создание и работа с интерфейсами в Figma, Pixso;</li>
+                    <li>Владение Adobe Illustrator;</li>
+                    <li>Английский язык (B1);</li>
+                </ul>
+            </section>
+            <section class="experience" id="experience-ru">
+                <h2>Опыт</h2>
+                <p> <b>Разработка</b> <i>(обучение)</i></p>
+                <ul>
+                    <li>Сделала фронтенд ля CRM-системы приемной комиссии НИУ «МЭИ» (HTML, CSS, JS),
+                        помогала в разработке бекенда CRM-системы (Laravel, PHP, SQL).</li>
+                    <li>Разработала внешний вид формы регистрации на День Открытых дверей (HTML,
+                        CSS, JS). <a href="https://github.com/rrrrr-neko/form-pk.git" class="link">https://github.com/rrrrr-neko/form-pk.git</a></li>
+                    <li>Выполнила дипломную работу бакалавра на тему «Разработка и внедрение версии
+                        для слабовидящих на сайт олимпиады школьников» (HTML, CSS, JS, JQuery).</li>
+                    <li>Выполнила курсовую работу по курсу WEB-технологии «Интернет-Магазин» (HTML,
+                        CSS, JS, PHP, SQL). <a href="https://github.com/rrrrr-neko/kr_web2_online_store.git" class="link">https://github.com/rrrrr-neko/kr_web2_online_store.git</a> </li>
+                    <li>Форма регистрации на танцевальный лагерь (HTML, CSS). <a href=" https://github.com/rrrrr-neko/form_dance_camp.git" class="link"> https://github.com/rrrrr-neko/form_dance_camp.git</a>
+                       </li>
+                </ul>
+                <p> <b>Fullstack-разработчик Systeme Electric</b> <i>(октябрь 2024 - ...)</i></p>
+                <ul>
+                    <li>Разработала <a href="https://learning.systeme.ru/">LMS платформу</a> на базе системы Moodle (HTML, SCSS, JS, PHP)</li>
+                </ul>
+            </section>
+            <section class="example" id="example-ru">
+                <h2>Пример кода</h2>
+                <pre class="example__item">
+                    <code>
+                        function vowelOne(s){
+                            let vowels = ['a','e','i','o','u'];
+                            return s.toLowerCase()
+                                    .split('')
+                                    .map( (a) => (vowels.find(item => item == a)) ? a = 1 : a = 0 )
+                                    .join('');
+                        }
+                    </code>
+                </pre>
+            </section>
+            <section class="about" id="about-ru">
+                <h2>О себе</h2>
+                <p>Люблю пробовать новое и саморазвиваться. В свободное время прохожу различные курсы, катаюсь на лонгборде или читаю книги.</p>
+                <p>В университете состояла в студенческих организациях - организовывала крупные
+                    мероприятия, проводила лекции, участвовала и выступала на форумах. Этот опыт помог
+                    развить мне тайм-менеджмент, коммуникабельность и умение оперативно изучить новое в
+                    сжатые сроки.</p>
+            </section>
+        </div>
+        <div class="content content-en">
+            <section class="main-info">
+                <div>
+                    <h1>Svetlana Konyaeva</h1>
+                    <p class="subtitle">Frontend Developer</p>
+                    <ul class="contact__list">
+                        <li class="contact__item">Moscow</li>
+                        <li class="contact__item"><a href="tel:+79051117402">Phone: +7 (905) 111-74-02</a></li>
+                        <li class="contact__item"><a href="https://t.me/rrrrr_neko">Telegram: @rrrrr_neko</a></li>
+                        <li class="contact__item"><a href="mailto:skonyaeva@list.ru">Email: skonyaeva@list.ru</a></li>
+                        <li class="contact__item"><a href="https://github.com/rrrrr-neko">Github: rrrrr-neko</a></li>
+                    </ul>
+                    <nav class="navbar">
+                        <ul class="navbar__list">
+                            <li class="navbar__item"><a href="#education-en">Education</a></li>
+                            <li class="navbar__item"><a href="#skills-en">Skills</a></li>
+                            <li class="navbar__item"><a href="#experience-en">Experience</a></li>
+                            <li class="navbar__item"><a href="#example-en">Code Example</a></li>
+                            <li class="navbar__item"><a href="#about-en">About Me</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <img src="photo.jpg" class="avatar" alt="Photo of Svetlana Konyaeva, beautiful girl with blue eyes and hair">
+            </section>
+            <section class="education" id="education-en">
+                <h2>Education</h2>
+                <p><b>National Research University "MPEI", Moscow</b> - Bachelor's Degree <i>(September 2019 - July 2024)</i>
+                    Institute of Information and Computer Technologies,
+                    Field of Study: "Computer Science and Engineering"</p>
+                <p><b>National Research University "MPEI", Moscow</b> - Master's Degree <i>(September 2024 - Present)</i>
+                    Institute of Information and Computer Technologies,
+                    Field of Study: "Computer Science and Engineering"</p>
+            </section>
+            <section class="skills" id="skills-en">
+                <h2>Skills</h2>
+                <ul>
+                    <li>Programming Languages (basic level): HTML, CSS, JavaScript;</li>
+                    <li>Git (basic level);</li>
+                    <li>Creating and working with interfaces in Figma, Pixso;</li>
+                    <li>Proficiency in Adobe Illustrator;</li>
+                    <li>English (B1);</li>
+                </ul>
+            </section>
+            <section class="experience" id="experience-en">
+                <h2>Experience</h2>
+                <p> <b>Development</b> <i>(Learning)</i></p>
+                <ul>
+                    <li>Developed frontend for the CRM system of the Admissions Committee at NRU "MPEI" (HTML, CSS, JS),
+                        assisted in backend development of the CRM system (Laravel, PHP, SQL).</li>
+                    <li>Designed the UI for the Open Day registration form (HTML, CSS, JS). 
+                        <a href="https://github.com/rrrrr-neko/form-pk.git" class="link">https://github.com/rrrrr-neko/form-pk.git</a></li>
+                    <li>Completed Bachelor's thesis on "Development and implementation of a version for visually impaired 
+                        on the school Olympiad website" (HTML, CSS, JS, JQuery).</li>
+                    <li>Completed coursework on WEB technologies "Online Store" (HTML, CSS, JS, PHP, SQL). 
+                        <a href="https://github.com/rrrrr-neko/kr_web2_online_store.git" class="link">https://github.com/rrrrr-neko/kr_web2_online_store.git</a></li>
+                    <li>Dance camp registration form (HTML, CSS). 
+                        <a href=" https://github.com/rrrrr-neko/form_dance_camp.git" class="link"> https://github.com/rrrrr-neko/form_dance_camp.git</a></li>
+                </ul>
+                <p> <b>Fullstack Developer at Systeme Electric</b> <i>(October 2024 - Present)</i></p>
+                <ul>
+                    <li>Developed an <a href="https://learning.systeme.ru/">LMS platform</a> based on Moodle system (HTML, SCSS, JS, PHP) 
+                        </li>
+                </ul>
+            </section>
+            <section class="example" id="example-en">
+                <h2>Code Example</h2>
+                <pre class="example__item">
+                    <code>
+            function vowelOne(s){
+                let vowels = ['a','e','i','o','u'];
+                return s.toLowerCase()
+                        .split('')
+                        .map( (a) => (vowels.find(item => item == a)) ? 1 : 0 )
+                        .join('');
+            }
+                    </code>
+                </pre>
+            </section>
+            <section class="about" id="about-en">
+                <h2>About Me</h2>
+                <p>I enjoy trying new things and self-development. In my free time, I take various courses, 
+                    ride a longboard, or read books.</p>
+                <p>At university, I was involved in student organizations - organized large events, 
+                    conducted lectures, participated and spoke at forums. This experience helped me develop 
+                    time management skills, communication abilities, and the ability to quickly learn new things 
+                    in tight deadlines.</p>
+            </section>
+        </div>
     </main>
+    <hr class="green">
+    <footer>
+        <span>CV updated in 2025</span>
+        <a  target="_blank" href="https://rs.school/courses/javascript-ru"><img src="rs-school-logo.svg" alt="rs-school logo" class="logo"></a>
+        <a  target="_blank" href="https://github.com/rrrrr-neko"><img src="./github-mark.svg" alt="Github logo" class="logo"></a>
+    </footer>
 </body>
 </html>
