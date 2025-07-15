@@ -1,3 +1,4 @@
+/* style.css */
 * {
     margin: 0;
     padding: 0;
@@ -8,21 +9,76 @@
     border: 3px solid rgb(101, 210, 141);
 }
 
-main {
+body {
     position: relative;
     margin: 20px auto;
-    width: 800px;
+    width: 70vw;
     font-family: "Montserrat", sans-serif;
+    color: black;
+    scroll-behavior: smooth
 }
-.main {
+
+.lang-radio {
+    position: absolute;
+    left: -9999px;
+}
+
+.lang-switch {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.lang-switch label {
+    cursor: pointer;
+    margin-top: 10px;
+    padding: 5px 10px;
+    border: 1px solid rgb(77, 192, 119);
+    transition: all 0.3s ease;
+}
+
+.content-wrapper {
+    position: relative;
+    min-height: 100vh;
+}
+
+.content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    z-index: 0;
+    pointer-events: none;
+}
+
+#lang-ru:checked ~ .content-wrapper .content-ru,
+#lang-en:checked ~ .content-wrapper .content-en {
+    position: relative;
+    opacity: 1;
+    z-index: 1;
+    pointer-events: all;
+}
+
+#lang-ru:checked ~ header [for="lang-ru"],
+#lang-en:checked ~ header [for="lang-en"] {
+    background-color: rgb(77, 192, 119);
+    color: white;
+}
+
+.navbar {
+    font-size: 0.8rem;
+    margin-top: 15px;
+}
+
+.main-info {
     display: flex;
     justify-content: space-between;
     margin: 20px 0 0 0;
 }
 
-img {
+.avatar {
     width: 200px;
-    /*clip-path: inset(0rem 0rem 5rem 0rem);*/
     height: 200px;
     object-fit: cover;
     object-position: 0 5px;
@@ -60,14 +116,52 @@ li {
 
 a {
     text-decoration: none;
-    color: gray;
-    font-size: 0.8em;
+    color: black;
 }
 
 a:hover {
     color: rgb(77, 192, 119);
 }
 
-.contact {
+.link {
+    color: gray;
+    font-size: 0.8em;
+}
+
+.contact__list {
     padding: 0;
+}
+
+.contact__item {
+    padding: 0;
+    margin-left: 0;
+    list-style-type: none;
+}
+
+.navbar__list {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar__item {
+    padding: 0;
+    margin-left: 0;
+    list-style-type: none;
+}
+
+.example__item {
+    background-color: #f6f8fa;
+}
+
+footer {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.logo {
+    height: 40px;
 }
